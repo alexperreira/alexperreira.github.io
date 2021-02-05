@@ -4,12 +4,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function($) {
+(function ($) {
   "use strict";
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#main-nav').outerHeight() - 1;
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -30,7 +30,7 @@
   });
 
   // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
@@ -46,7 +46,7 @@
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (!$('.subpage-nav').length) {
       if (scroll > 200) {
@@ -61,7 +61,7 @@
   //  // RESPONSIVE MENU
   // ========================================================================= //
 
-  $('.responsive').on('click', function(e) {
+  $('.responsive').on('click', function (e) {
     $('.nav-menu').slideToggle();
   });
 
@@ -71,7 +71,7 @@
 
   var typed = $(".typed");
 
-  $(function() {
+  $(function () {
     var strings = $('.typed-items').text();
     strings = $('.typed-items').data('typed-person') + ',' + strings;
     strings = strings.split(',');
@@ -110,13 +110,13 @@
   // ========================================================================= //
   //  Porfolio isotope and filter
   // ========================================================================= //
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
+    $('#portfolio-flters li').on('click', function () {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
@@ -127,7 +127,7 @@
   });
 
   // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
+  $(document).ready(function () {
     $('.venobox').venobox();
   });
 
@@ -140,3 +140,4 @@
   });
 
 })(jQuery);
+
