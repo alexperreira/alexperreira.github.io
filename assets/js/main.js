@@ -141,6 +141,7 @@
 
 })(jQuery);
 
+document.querySelector('form').addEventListenter('submit', handleSubmit);
 
 const handleSubmit = (e) => {
   e.preventDefault()
@@ -152,5 +153,3 @@ const handleSubmit = (e) => {
     body: new URLSearchParams(formData).toString()
   }).then(() => console.log('Form successfully submitted.')).catch((error) => alert(error));
 }
-
-document.querySelector('form').addEventListenter('submit', handleSubmit);
