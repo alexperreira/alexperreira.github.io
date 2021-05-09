@@ -78,10 +78,18 @@
         <ul class="list-unstyled list-social">
           <li><a href="#"><i class="ion-social-facebook"></i></a></li>
           <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+          <li><a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
         </ul>
       </div>
     </div>
@@ -103,7 +111,7 @@
           </div>
 
           <div class="col-lg-7">
-            <div class="about-descr" data-aos="fade-left" data-aos-delay="200">
+            <div class="about-descr" data-aos="fade-left" data-aos-delay="100">
 
               <p class="p-heading">
                 I'm a self-taught UX/UI Developer based in Boise, Idaho. I like to build clean responsive, yet intricate
@@ -213,7 +221,7 @@
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="" id="portfolio1">
+            <img src="assets/img/portfolio/wb.png" class="img-fluid" alt="" id="portfolio1">
             <div class="portfolio-info">
               <h4>App 1</h4>
               <p>App</p>
@@ -225,11 +233,11 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/wb.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link"
+              <a href="assets/img/portfolio/wb.png" data-gall="portfolioGallery" class="venobox preview-link"
                 title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
@@ -286,7 +294,7 @@
     </div><!-- End Portfolio Section -->
 
     <!-- ======= Journal Section ======= -->
-    <div id="journal" class="text-left paddsection">
+    <!-- <div id="journal" class="text-left paddsection">
 
       <div class="container">
         <div class="section-title text-center">
@@ -350,7 +358,11 @@
         </div>
       </div>
 
-    </div><!-- End Journal Section -->
+    </div>End Journal Section -->
+    <!-- ====== Embedded IG Feed (Curator.io) -->
+    <!-- Place <div> tag where you want the feed to appear -->
+    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank"
+        class="crt-logo crt-tag">Powered by Curator.io</a></div>
 
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">
@@ -364,10 +376,10 @@
                 <h2 class="mb-30">GET IN TOUCH</h2>
 
                 <ul class="contact-details">
-                  <li><span>@papi.squatch</span></li>
+                  <li><span><a href="https://www.instagram.com/papi.squatch/">@papi.squatch</a></span></li>
                   <li><span>Boise, Idaho</span></li>
-                  <li><span>+1 (208) 985 5369</span></li>
-                  <li><span>alex@thealexperr.com</span></li>
+                  <li><span><a href="tel:+12089855369">+1 (208) 985 5369</a></span></li>
+                  <li><span><a href="mailto:alex@thealexperr.com">alex@thealexperr.com</a></span></li>
                 </ul>
 
               </div>
@@ -487,6 +499,14 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script type="text/javascript">
+    /* curator-feed-default-feed-layout */
+    (function () {
+      var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1;
+      i.src = "https://cdn.curator.io/published/4414abb9-0516-48e1-93a4-ba947d22b448.js";
+      e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
+    })();
   </script>
 
   <!-- Template Main JS File -->

@@ -247,7 +247,7 @@ nav ul li a {
   font-size: 13px;
   letter-spacing: 3px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -257,7 +257,7 @@ nav ul li a {
   margin-right: 20px;
 }
 
-.hero-content .list-social li i {
+.hero-content .list-social li ion-icon {
   font-size: 15px;
   color: #898989;
 }
@@ -679,6 +679,10 @@ nav ul li a {
   padding-bottom: 10px;
 }
 
+.contact-details li a {
+  color: #898989;
+}
+
 #contact input, #contact textarea {
   width: 100%;
   margin-bottom: 5px;
@@ -826,7 +830,7 @@ nav ul li a {
   margin-left: 5px;
 }
 
-/* Commonts */
+/* Comments */
 .comments {
   background: #fff;
 }
@@ -881,7 +885,7 @@ nav ul li a {
   padding-left: 10%;
 }
 
-/* Commonts form */
+/* Comments form */
 .cmt {
   background: #fff;
 }
