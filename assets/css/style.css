@@ -22,7 +22,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -51,7 +56,8 @@ a:hover {
   transition: all 0.5s ease-in-out 0s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #b8a07e;
   text-decoration: underline;
 }
@@ -100,7 +106,8 @@ p {
   text-transform: uppercase;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #fff;
 }
 
@@ -222,7 +229,7 @@ nav ul li a {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
+  background: url("../img/home-bg-1.jpg") repeat scroll center center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -298,11 +305,11 @@ nav ul li a {
   font-size: 14px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -313,9 +320,11 @@ nav ul li a {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
@@ -388,7 +397,8 @@ nav ul li a {
   line-height: 22px;
 }
 
-.services-block i, .services-block ion-icon {
+.services-block i,
+.services-block ion-icon {
   font-size: 44px;
   color: #b8a07e;
   line-height: 44px;
@@ -457,7 +467,8 @@ nav ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
   color: #b8a07e;
 }
 
@@ -497,7 +508,8 @@ nav ul li a {
   padding: 0;
 }
 
-#portfolio .portfolio-item .portfolio-info .preview-link, #portfolio .portfolio-item .portfolio-info .details-link {
+#portfolio .portfolio-item .portfolio-info .preview-link,
+#portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 40px;
   font-size: 24px;
@@ -505,7 +517,8 @@ nav ul li a {
   color: #b8a07e;
 }
 
-#portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
+#portfolio .portfolio-item .portfolio-info .preview-link:hover,
+#portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #cab89f;
 }
 
@@ -534,7 +547,8 @@ nav ul li a {
   z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
@@ -576,7 +590,7 @@ nav ul li a {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -599,6 +613,7 @@ nav ul li a {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
   }
+
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
@@ -608,7 +623,8 @@ nav ul li a {
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
-#journal, #journal-blog {
+#journal,
+#journal-blog {
   height: auto;
   width: 100%;
   background: #f7f7f7;
@@ -683,7 +699,8 @@ nav ul li a {
   color: #898989;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   width: 100%;
   margin-bottom: 5px;
 }
@@ -709,7 +726,7 @@ nav ul li a {
   font-weight: 600;
 }
 
-.email-form .error-message br + br {
+.email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -750,6 +767,7 @@ nav ul li a {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -759,6 +777,7 @@ nav ul li a {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -960,16 +979,19 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* Navbar */
   nav {
     padding: 10px 15px;
   }
+
   .nav-menu {
     margin-top: 40px;
     display: none;
     float: none;
     width: 100%;
   }
+
   .nav-menu li {
     float: none;
     width: 100%;
@@ -980,43 +1002,53 @@ blockquote {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .responsive {
     float: right;
     padding-top: 15px;
     display: block;
   }
+
   /* About */
   .head-info .header-content .cmaster h1 {
     font-size: 32px;
   }
+
   #about .div-img-bg {
     padding: 0;
   }
+
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
   }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
+
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
   }
+
   /* portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
     margin: 20px;
     display: inline-block;
   }
+
   /* journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
   }
+
   /* Contact */
   .contact-contact {
     margin-bottom: 30px;
   }
+
   /* Footer */
   #footer .socials-media ul li {
     margin-right: 0;
@@ -1030,16 +1062,19 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 767px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
   }
+
   .nav-menu {
     margin-top: 40px;
     display: none;
     float: none;
     width: 100%;
   }
+
   .nav-menu li {
     float: none;
     width: 100%;
@@ -1050,43 +1085,53 @@ blockquote {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .responsive {
     float: right;
     padding-top: 15px;
     display: block;
   }
+
   /* About */
   .head-info .header-content h1 {
     font-size: 32px;
   }
+
   #about .div-img-bg {
     padding: 0;
   }
+
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
   }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
+
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
   }
+
   /* portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
     margin: 20px;
     display: inline-block;
   }
+
   /* journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
   }
+
   /* Contact */
   .contact-contact {
     margin-bottom: 30px;
   }
+
   /* Footer */
   #footer .socials-media ul li {
     margin-right: 0;
@@ -1100,16 +1145,19 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 600px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
   }
+
   .nav-menu {
     margin-top: 40px;
     display: none;
     float: none;
     width: 100%;
   }
+
   .nav-menu li {
     float: none;
     width: 100%;
@@ -1120,43 +1168,53 @@ blockquote {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .responsive {
     float: right;
     padding-top: 15px;
     display: block;
   }
+
   /* About */
   .head-info .header-content h1 {
     font-size: 32px;
   }
+
   #about .div-img-bg {
     padding: 0;
   }
+
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
   }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
+
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
   }
+
   /* portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
     margin: 10px;
     display: inline-block;
   }
+
   /* journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
   }
+
   /* Contact */
   .contact-contact {
     margin-bottom: 30px;
   }
+
   /* Footer */
   #footer .socials-media ul li {
     margin-right: 0;
@@ -1170,16 +1228,19 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 480px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
   }
+
   .nav-menu {
     margin-top: 40px;
     display: none;
     float: none;
     width: 100%;
   }
+
   .nav-menu li {
     float: none;
     width: 100%;
@@ -1190,42 +1251,52 @@ blockquote {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .responsive {
     float: right;
     padding-top: 15px;
     display: block;
   }
+
   /* About */
   .head-info .header-content h1 {
     font-size: 32px;
   }
+
   #about .div-img-bg {
     padding: 0;
   }
+
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
   }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
+
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
   }
+
   /* portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
     margin: 20px;
   }
+
   /* journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
   }
+
   /* Contact */
   .contact-contact {
     margin-bottom: 30px;
   }
+
   /* Footer */
   #footer .socials-media ul li {
     margin-right: 0;
@@ -1239,16 +1310,19 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 320px) {
+
   /* Navbar */
   nav {
     padding: 20px 15px;
   }
+
   .nav-menu {
     margin-top: 40px;
     display: none;
     float: none;
     width: 100%;
   }
+
   .nav-menu li {
     float: none;
     width: 100%;
@@ -1259,42 +1333,52 @@ blockquote {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .responsive {
     float: right;
     padding-top: 15px;
     display: block;
   }
+
   /* About */
   .head-info .header-content h1 {
     font-size: 32px;
   }
+
   #about .div-img-bg {
     padding: 0;
   }
+
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
   }
+
   #about .about-descr .p-heading {
     font-size: 20px;
   }
+
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
   }
+
   /* portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
     margin: 20px;
   }
+
   /* journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
   }
+
   /* Contact */
   .contact-contact {
     margin-bottom: 30px;
   }
+
   /* Footer */
   #footer .socials-media ul li {
     margin-right: 0;
@@ -1302,6 +1386,7 @@ blockquote {
     float: none;
     display: inline-block;
   }
+
   /* Single page */
   .entry-comments-body span {
     display: inline-block;
